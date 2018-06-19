@@ -9,3 +9,11 @@
 /build
 /captures
 .externalNativeBuild
+.idea/codeStyles/
+.idea/dictionaries/
+.idea/gradle.xml
+.idea/misc.xml
+.idea/runConfigurations.xml
+.idea/vcs.xml
+app/release/
+gradle/
