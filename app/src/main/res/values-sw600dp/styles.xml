@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DisplayEditTextStyle.Formula" parent="DisplayEditTextStyle">
+        <!--<item name="android:paddingTop">72dip</item>-->
+        <!--<item name="android:paddingBottom">32dip</item>-->
+        <item name="android:paddingStart">44dip</item>
+        <item name="android:paddingEnd">44dip</item>
+        <item name="android:textSize">80sp</item>
+        <item name="minTextSize">48sp</item>
+        <item name="maxTextSize">80sp</item>
+        <item name="stepTextSize">8sp</item>
+    </style>
+
+    <style name="DisplayEditTextStyle.Result" parent="DisplayEditTextStyle">
+        <!--<item name="android:paddingTop">32dip</item>-->
+        <!--<item name="android:paddingBottom">90dip</item>-->
+        <item name="android:paddingStart">44dip</item>
+        <item name="android:paddingEnd">44dip</item>
+        <item name="android:textSize">48sp</item>
+    </style>
+</resources>

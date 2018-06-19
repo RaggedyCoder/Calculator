@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Calculator</string>
+
+    <string name="empty_string" translatable="false" />
+
+    <!-- Error displayed when expression evaluates to NaN. [CHAR_LIMIT=14] -->
+    <string name="error_nan">Not a number</string>
+    <!-- Error displayed when expression contains a syntax error. [CHAR_LIMIT=14] -->
+    <string name="error_syntax">Bad Expression</string>
+
+    <!-- Constant for Euler's number (i.e. "2.7182…"). [CHAR_LIMIT=1] -->
+    <string name="constant_e" translatable="false">e</string>
+    <!-- Constant for pi (i.e. "3.1415…"). [CHAR_LIMIT=1] -->
+    <string name="constant_pi" translatable="false">π</string>
+
+    <!-- Left parenthesis (e.g. "log(", "2 × (3 - 1)". [CHAR_LIMIT=1] -->
+    <string name="parenthesis_left">(</string>
+    <!-- Right parenthesis (e.g. "log(2)", "(3 - 1) × 2". [CHAR_LIMIT=1] -->
+    <string name="parenthesis_right">)</string>
+
+    <!-- Divide operator (e.g. "1 + 2"). [CHAR_LIMIT=1] -->
+    <string name="operator_divide" translatable="false">÷</string>
+    <!-- Multiply operator (e.g. "1 + 2"). [CHAR_LIMIT=1] -->
+    <string name="operator_multiply" translatable="false">×</string>
+    <!-- Subtraction operator (e.g. "1 + 2"). [CHAR_LIMIT=1] -->
+    <string name="operator_subtraction" translatable="false">-</string>
+    <!-- Addition operator (e.g. "1 + 2"). [CHAR_LIMIT=1] -->
+    <string name="operator_addition" translatable="false">+</string>
+    <!-- Power operator (e.g. "1 ^ 2"). [CHAR_LIMIT=1] -->
+    <string name="operator_power" translatable="false">^</string>
+    <!-- Square root operator (e.g. "√1"). [CHAR_LIMIT=1] -->
+    <string name="operator_square_root" translatable="false">√</string>
+    <!-- Factorial operator (e.g. "2!"). [CHAR_LIMIT=1] -->
+    <string name="operator_factorial" translatable="false">!</string>
+
+    <!-- Result displayed when expression evaluates to infinity. [CHAR_LIMIT=1] -->
+    <string name="sign_infinity" translatable="false">∞</string>
+    <!-- Equals operator (e.g. "1 + 2 = ?"). [CHAR_LIMIT=1] -->
+    <string name="sign_equal" translatable="false">=</string>
+
+    <!-- Abbrev. name of cosine function (e.g. "cos(π)". [CHAR_LIMIT=3] -->
+    <string name="function_cos">cos</string>
+    <!-- Natural logarithm function (e.g. "ln(2)"). [CHAR_LIMIT=3] -->
+    <string name="function_ln">ln</string>
+    <!-- Logarithm function (e.g. "log(10)"). [CHAR_LIMIT=3] -->
+    <string name="function_log">log</string>
+    <!-- Abbrev. name of sine function (e.g. "sin(π)". [CHAR_LIMIT=3] -->
+    <string name="function_sin">sin</string>
+    <!-- Abbrev. name of tangent function (e.g. "tan(π)". [CHAR_LIMIT=3] -->
+    <string name="function_tan">tan</string>
+
+    <!-- Clear operation to clear the currently entered expression. [CHAR_LIMIT=3] -->
+    <string name="clr">clr</string>
+    <!-- Delete operation to remove last entered token. [CHAR_LIMIT=3] -->
+    <string name="del">del</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="delete">Del</string>
+    <string name="zero">0</string>
+    <string name="dot">.</string>
+    <string name="clear">CLR</string>
+</resources>

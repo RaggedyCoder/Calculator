@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCyan"
+    android:elevation="5dip"
+    android:gravity="end">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sinCosTanViewHolder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/parenthesisRootViewHolder"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread">
+
+
+        <Button
+            android:id="@+id/sinButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/cosButton"
+            android:padding="0dip"
+            android:text="@string/function_sin"
+            android:textAllCaps="false"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@+id/cosButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/cosButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:padding="0dip"
+            android:text="@string/function_cos"
+            android:textAllCaps="false"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@+id/sinButton"
+            app:layout_constraintEnd_toStartOf="@+id/tanButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/sinButton"
+            app:layout_constraintTop_toTopOf="@+id/sinButton" />
+
+        <Button
+            android:id="@+id/tanButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/cosButton"
+            android:padding="0dip"
+            android:text="@string/function_tan"
+            android:textAllCaps="false"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@+id/cosButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/cosButton"
+            app:layout_constraintTop_toTopOf="@+id/cosButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parenthesisRootViewHolder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/lnLogFactorialViewHolder"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sinCosTanViewHolder"
+        app:layout_constraintVertical_chainStyle="spread">
+
+        <Button
+            android:id="@+id/leftParenthesisButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/rightParenthesisButton"
+            android:padding="0dip"
+            android:text="@string/parenthesis_left"
+            android:textAllCaps="false"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@+id/rightParenthesisButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/rightParenthesisButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:padding="0dip"
+            android:text="@string/parenthesis_right"
+            android:textAllCaps="false"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@+id/leftParenthesisButton"
+            app:layout_constraintEnd_toStartOf="@+id/squareRootButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/leftParenthesisButton"
+            app:layout_constraintTop_toTopOf="@+id/leftParenthesisButton" />
+
+        <Button
+            android:id="@+id/squareRootButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/rightParenthesisButton"
+            android:padding="0dip"
+            android:text="@string/operator_square_root"
+            android:textAllCaps="false"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@+id/rightParenthesisButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/rightParenthesisButton"
+            app:layout_constraintTop_toTopOf="@+id/rightParenthesisButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lnLogFactorialViewHolder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/view4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parenthesisRootViewHolder"
+        app:layout_constraintVertical_chainStyle="spread">
+
+        <Button
+            android:id="@+id/lnButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/logButton"
+            android:padding="0dip"
+            android:text="@string/function_ln"
+            android:textAllCaps="false"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@+id/logButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/logButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:padding="0dip"
+            android:text="@string/function_log"
+            android:textAllCaps="false"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@+id/lnButton"
+            app:layout_constraintEnd_toStartOf="@+id/factorialButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/lnButton"
+            app:layout_constraintTop_toTopOf="@+id/lnButton" />
+
+        <Button
+            android:id="@+id/factorialButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/logButton"
+            android:padding="0dip"
+            android:text="@string/operator_factorial"
+            android:textAllCaps="false"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@+id/logButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/logButton"
+            app:layout_constraintTop_toTopOf="@+id/logButton" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lnLogFactorialViewHolder"
+        app:layout_constraintVertical_chainStyle="spread">
+
+        <Button
+            android:id="@+id/piButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/eButton"
+            android:padding="0dip"
+            android:text="@string/constant_pi"
+            android:textAllCaps="false"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@+id/eButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/eButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:padding="0dip"
+            android:text="@string/constant_e"
+            android:textAllCaps="false"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@+id/piButton"
+            app:layout_constraintEnd_toStartOf="@+id/powerButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/piButton"
+            app:layout_constraintTop_toTopOf="@+id/piButton" />
+
+        <Button
+            android:id="@+id/powerButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/eButton"
+            android:padding="0dip"
+            android:text="@string/operator_power"
+            android:textAllCaps="false"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@+id/eButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/eButton"
+            app:layout_constraintTop_toTopOf="@+id/eButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

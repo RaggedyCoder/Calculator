@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimaryLight">#dffff8</color>
+    <color name="colorCyan">#00bcd4</color>
+
+    <!-- Text color for the formula in the calculator display. -->
+    <color name="display_formula_text_color">#EE000000</color>
+
+    <!-- Text color for the result in the calculator display. -->
+    <color name="display_result_text_color">#CC000000</color>
+    <color name="calculator_error_color">#F40056</color>
+</resources>

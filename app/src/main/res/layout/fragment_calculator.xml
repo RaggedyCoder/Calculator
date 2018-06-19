@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/calculatorMainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="5dip"
+    app:cardElevation="5dip">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/displayViewHolder"
+            layout="@layout/layout_display"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/guidelineHorizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".34" />
+
+        <com.betelgeuse.calculator.ui.widget.view.CalculatorPadViewPager
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#FFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/displayViewHolder">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/operationPadViewHolder"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#FFF">
+
+                <include
+                    android:id="@+id/linearLayout4"
+                    layout="@layout/layout_number_pad"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="24dip"
+                    android:layout_marginBottom="72dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="24dip"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <com.google.android.material.bottomappbar.BottomAppBar
+                        android:id="@+id/bottomAppbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        app:backgroundTint="@color/colorPrimary"
+                        app:fabAlignmentMode="end"
+                        app:fabAttached="true"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                        <include
+                            android:id="@+id/arithmeticPadViewHolder"
+                            layout="@layout/layout_arithmetic_pad"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="100dp" />
+
+                    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:src="@drawable/ic_equal_white_yrsa_48dp"
+                        app:fabSize="normal"
+                        app:layout_anchor="@+id/bottomAppbar"
+                        app:layout_anchorGravity="end" />
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <include layout="@layout/pad_advanced" />
+        </com.betelgeuse.calculator.ui.widget.view.CalculatorPadViewPager>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
